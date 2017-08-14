@@ -26,6 +26,7 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // ================================================================================
 //require("./routing/apiRoutes")(app);
 require("./routing/htmlroutes")(app);
+require("./routing/apiroutes")(app);
 // ==============================================================================
 // LISTENER
 // The below code effectively "starts" our server

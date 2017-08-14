@@ -17,7 +17,7 @@
 <body>
   <!--survey page-->
   <div class="container">
-    <h2>Survey Questions</h2>
+    <h2>Survey Questions</h2>brow
     <hr>
 
     <div class="row">
@@ -40,7 +40,7 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
 
-    <!-- <h3><strong>Question 2<strong></h3>
+    <h3><strong>Question 2<strong></h3>
       <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
       <select data-placeholder class= "chosen-slect" id="q2">
         <option value></option>
@@ -210,20 +210,20 @@
                  // Show the modal with the best match
                  $("#resultsModal").modal('toggle');
              });
-                 // post('/api/friends', userData).then((status) => {
-                 //  if(status === 200) console.log(' SUCCESS@!');
-                 //  console.log(' WHAT IS OUR STATUS', status);
-                 // })
-                 // function post (path, data) {
-                 //   return window.fetch(path, {
-                 //       method: 'POST',
-                 //       headers: {
-                 //           'Accept': 'application/json',
-                 //           'Content-Type': 'application/json'
-                 //       },
-                 //       body: JSON.stringify(data)
-                 //   })
-                 // }
+                  post('/api/friends', userData).then((status) => {
+                   if(status === 200) console.log(' SUCCESS@!');
+                   console.log(' WHAT IS OUR STATUS', status);
+                 })
+                 function post (path, data) {
+                   return window.fetch(path, {
+                       method: 'POST',
+                       headers: {
+                           'Accept': 'application/json',
+                           'Content-Type': 'application/json'
+                       },
+                       body: JSON.stringify(data)
+                   })
+                 }
          }
          else
          {
